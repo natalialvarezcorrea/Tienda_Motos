@@ -1,0 +1,205 @@
+<!--navegación -->
+<div>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="/public/img/logo.PNG" width="150px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06"
+            aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signin">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="signup">Registrarse</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Motocicletas</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown06">
+                        <a class="dropdown-item" href="#deportiva">deportivas</a>
+                        <a class="dropdown-item" href="#">Automaticas</a>
+                        <a class="dropdown-item" href="#urbana">Urbanas</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Carrito-->
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <img src="/public/img/carro.png " class="nav-link dropdown-toggle img-fluid" height="70px"
+                            width="60px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></img>
+                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                            <a href="#" id="procesar-pedido" class=""></a>
+                            <a id="procesar-pedido" class="btn btn-danger btn-block" href="compra">Terminar
+                                Compra</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+        </div>
+    </nav>
+</div>
+
+<!--motos-->
+<div class="container" id="lista-productos">
+    <div class="row  justify-content-center">
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;" id="urbana">
+            <img src="/public/Motos/boxer.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center;">BOXER CT</h3>
+                <p class="card-text">GRIS GRAFITO - GRIS 2020 <p style="color: red; text-align:center;" class="precio">
+                        3600000</p>
+                </p>
+                <a href="" class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="1">COMPRAR</a>
+            </div>
+        </div>
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;" id="deportiva">
+            <img src="/public/Motos/pulsar.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center;">PULSAR NS 200 </h3>
+                <p style="text-align: center;" class="card-text">BLANCO CELESTIAL 2020 <p
+                        style="color: red; text-align:center;" class="precio">9500000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="2">COMPRAR</a>
+
+            </div>
+        </div>
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;" id="automatica">
+            <img src="/public/Motos/agility.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center;">AGILITY ALL NEW</h3>
+                <p class="card-text" style="text-align: center;"> NEGRO ROJO - 2020 <p
+                        style="color: red; text-align:center;" class="precio">5800000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="3">COMPRAR</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row row justify-content-center">
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;" id="deportiva">
+            <img src="/public/Motos/duke.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center;">KTM 250 DUKE NG</h3>
+                <p class="card-text" style="text-align: center;">NEG NAR BLANCO 2019 <p
+                        style="color: red; text-align:center;" class="precio">14490000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="4">COMPRAR</a>
+            </div>
+        </div>
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;">
+            <img src="/public/Motos/discover.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center; margin-top: 20px;">DISCOVER 150 </h3>
+                <p class="card-text" style="text-align: center;">ST 2019 <p style="color: red; text-align:center;"
+                        class="precio">4700000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="5">COMPRAR</a>
+            </div>
+        </div>
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem; " id="automatica">
+            <img src="/public/Motos/Urban.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center;">URBAN S</h3>
+                <p class="card-text">BLANCO CELESTIAL - 2020 <p style="color: red; text-align:center;" class="precio">
+                        6500000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="6">COMPRAR</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row justify-content-center">
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;" id="deportiva">
+            <img src="/public/Motos/adventure.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center; margin-top: 50px;">ADVENTURE R</h3>
+                <p class="card-text" style="text-align: center;">NEGRO BLANCO 2018 <p
+                        style="color: red; text-align:center;" class="precio">59900000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="7">COMPRAR</a>
+            </div>
+        </div>
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;" id="automatica">
+            <img src="/public/Motos/victory.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center;">VICTORY ADVANCE R</h3>
+                <p class="card-text" style="text-align: center;">BLANCO NEGRO ROJO - 2020 <p
+                        style="color: red; text-align:center;" class="precio">3200000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito " style="margin-left:27%;"
+                    data-id="8">COMPRAR</a>
+            </div>
+        </div>
+
+        <div class="card .col-12 col-sm-12 col-md-4 col-lg-3 m-3" style="width: 20rem;" id="urbana">
+            <img src="/public/Motos/starket.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 style="text-align: center;">STARKER AVANTI</h3>
+                <p class="card-text" style="text-align: center;">BLANCO 2019 <p style="color: red; text-align:center;"
+                        class="precio">5000000</p>
+                </p>
+                <a class="btn btn-outline-success btn-sm agregar-carrito" style="margin-left:27%;"
+                    data-id="9">COMPRAR</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--FINAL-->
+
+    <div class="container-fluid .col-12" style="background-color: black; height: 100px; ">
+
+        <div class="row">
+
+            <img src="/public/img/whatsapp.png" alt="" style="width: 30px; height: 30px;" class="ml-5 mt-5">
+            <img src="/public/img/facebook.png" alt="" style="width: 30px; height: 30px;" class="ml-5 mt-5">
+            <img src="/public/img/instagram.png" alt="" style="width: 30px; height: 30px;" class="ml-5 mt-5">
+        </div>
+
+    </div>
